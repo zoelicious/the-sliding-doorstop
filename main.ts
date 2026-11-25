@@ -6,6 +6,7 @@ const TEXT = "The doorstop has one job: stay put. It has been kicked, tripped ov
 if (TEXT.length < 1 || TEXT.length > 200) {
   throw new Error("review must be 1-200 characters, got " + TEXT.length);
 }
+// Guard: the one-line review must stay within 1-200 characters, per the competition rules.
 
 const outDir = process.env.MAKEFUN_OUTPUT_DIR || "/output";
 
